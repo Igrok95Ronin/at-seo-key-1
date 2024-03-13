@@ -113,17 +113,37 @@ body {
     color: #000;
 }
 
-$btnColorFixed: #000;
+$btnColorFixed: #ff4f4f;
+$borderTop: #ff4f4f;
+$borderBottom: #cbcbcb;
 :root{
-    --mainColor: #6baee9;
+    --mainColor: #1f5dd5;
 }
 //  var(--mainColor);
 
 @mixin h1Title {
     color: #fff;
+    background-color: var(--mainColor);
     text-align: center;
     font-weight: 700;
-    font-size: clamp(36px, 5vw, 50px);
+    font-size: clamp(29px, 5vw, 45px);
+    border-top: 10px solid $borderTop;
+    border-bottom: 10px dashed $borderBottom;
+    padding: 10px 5px;
+    padding-left: 50px;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        background-image: url(../img/star.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 40px;
+        height: 40px;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+    }
 }
 @mixin h2Title {
     text-align: center;
