@@ -1,0 +1,25 @@
+.doorOpening {
+    margin-top: 50px;
+}
+.doorOpening__box {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.doorOpening__left {
+}
+.doorOpening__title{
+    @include h2Title;
+}
+.doorOpening__imgWrp {
+    max-width: 100%;
+    max-height: 100%;
+}
+.doorOpening__img {
+    width: 100%;
+    height: 100%;
+}
+.doorOpening__txt {
+    padding: 10px;
+    line-height: 20px;
+}

@@ -146,10 +146,14 @@ $borderBottom: #cbcbcb;
     }
 }
 @mixin h2Title {
-    text-align: center;
     margin-bottom: 20px;
     font-weight: 700;
-    font-size: clamp(22px, 4vw, 32px);
+    font-size: clamp(22px, 4vw, 30px);
+    border-top: 10px solid $borderTop;
+    border-bottom: 10px dashed $borderBottom;
+    color: #fff;
+    background-color: var(--mainColor);
+    padding: 10px;
 }
 @mixin btn {
     background-color: #534f3f;
