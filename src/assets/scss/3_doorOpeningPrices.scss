@@ -1,0 +1,35 @@
+.doorOpeningPrices {
+    margin-top: 50px;
+}
+.doorOpeningPrices__box {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.doorOpeningPrices__left {
+}
+.doorOpeningPrices__title {
+    @include h2Title;
+    margin-bottom: 20px;
+
+}
+.doorOpeningPrices__txt {
+    line-height: 20px;
+    padding: 0 10px;
+}
+.doorOpeningPrices__right {
+    padding: 10px;
+}
+.doorOpeningPrices__subTitle {
+    font-weight: 700;
+    font-size: clamp(20px, 4vw, 25px);
+    margin-bottom: 20px;
+}
+.doorOpeningPrices__ul {
+    list-style: disc;
+    list-style-position:inside;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
