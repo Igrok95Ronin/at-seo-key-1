@@ -1,0 +1,22 @@
+.questionsAndAnswers {
+    margin-top: 50px;
+}
+.questionsAndAnswers__box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+.questionsAndAnswers__title {
+    @include h2Title;
+}
+.questionsAndAnswers__wrp {
+    padding: 0 10px;
+}
+.questionsAndAnswers__subTitle {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: clamp(20px, 4vw, 26px);
+}
+.questionsAndAnswers__txt {
+    line-height: 20px;
+}
