@@ -1,0 +1,29 @@
+.comments {
+    margin-top: 50px;
+}
+.comments__box {
+}
+.comments__title {
+    @include h2Title;
+}
+.comments__wrp {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+.comments__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 10px;
+}
+.comments__name {
+    font-weight: 700;
+    font-size: 18px;
+}
+.comments__message {
+    line-height: 20px;
+}
+.comments__stars {
+}
