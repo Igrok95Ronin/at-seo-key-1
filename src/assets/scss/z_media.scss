@@ -9,3 +9,16 @@
         margin-bottom: 60px;
     }
 }
+
+@media(max-width: 767px) {
+    .header__box,
+    .doorOpening__box,
+    .doorOpeningPrices__box,
+    .locksmithBerlin__box {
+        grid-template-columns: 1fr;
+    }
+    .comments__wrp {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+}
